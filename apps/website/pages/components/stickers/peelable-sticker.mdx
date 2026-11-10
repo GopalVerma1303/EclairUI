@@ -1,18 +1,20 @@
 ---
 title: "Peelable Sticker"
 description: "Animated sticker component with peeling effect, adding dynamic visual flair to your UI."
-image: "https://webui.gopx.dev/assets/components/stickers/peelable-sticker.png"
+image: "https://eclairui.gopalverma.com/assets/components/stickers/peelable-sticker.png"
 ---
 
 import { Tabs } from "nextra/components";
-import { Steps } from 'nextra/components'
+import { Steps } from "nextra/components";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
-
 # Peelable Sticker
 
-<p className="component-description">Animated sticker component with peeling effect, adding dynamic visual flair to your UI.</p>
+<p className="component-description">
+  Animated sticker component with peeling effect, adding dynamic visual flair to
+  your UI.
+</p>
 
 `Sticker` `Peeling` `Tailwind CSS` `Framer Motion` `Shaders`
 
@@ -27,6 +29,7 @@ import { ComponentSource } from "@/components/component-source";
 ```bash
 npx gopx-webui add peelable-sticker
 ```
+
   </Tabs.Tab>
   <Tabs.Tab>
 <Steps>
@@ -38,11 +41,9 @@ npx gopx-webui add peelable-sticker
   </Tabs.Tab>
 </Tabs>
 
-
-
 ## Props
 
-| Prop            | Type     | Required | Description                                                  |
-|-----------------|----------|----------|--------------------------------------------------------------|
-| `stickerImage`  | `string` | Yes      | The URL of the image to be displayed on the sticker.        |
-| `message`       | `string` | Yes      | The text message that appears on the sticker.               |
+| Prop           | Type     | Required | Description                                          |
+| -------------- | -------- | -------- | ---------------------------------------------------- |
+| `stickerImage` | `string` | Yes      | The URL of the image to be displayed on the sticker. |
+| `message`      | `string` | Yes      | The text message that appears on the sticker.        |

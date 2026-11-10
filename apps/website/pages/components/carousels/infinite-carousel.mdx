@@ -1,20 +1,23 @@
 ---
 title: "Infinite Carousel"
 description: "A customizable carousel component that displays a series of images or logos with a smooth infinite scrolling effect."
-image: "https://webui.gopx.dev/assets/components/carousels/infinite-carousel.png"
+image: "https://eclairui.gopalverma.com/assets/components/carousels/infinite-carousel.png"
 ---
 
-import Showcase from '@/components/Showcase3';
-import InfiniteCarousel from '@/components/InfiniteCarousel';
-import { Steps } from 'nextra/components';
-import { Tabs } from 'nextra/components';
+import Showcase from "@/components/Showcase3";
+import InfiniteCarousel from "@/components/InfiniteCarousel";
+import { Steps } from "nextra/components";
+import { Tabs } from "nextra/components";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
-
 # Infinite Carousel
 
-<p className="opacity-80 text-lg">A customizable carousel component that displays a series of images or logos with a smooth infinite scrolling effect, ideal for showcasing brand partnerships or featured content.</p>
+<p className="opacity-80 text-lg">
+  A customizable carousel component that displays a series of images or logos
+  with a smooth infinite scrolling effect, ideal for showcasing brand
+  partnerships or featured content.
+</p>
 
 `Carousel` `Infinite` `Animated` `Brands`
 
@@ -37,49 +40,48 @@ npx gopx-webui add infinite-carousel
 
 ### Define the animation and keyframes in `tailwind.config.ts`
 
-  ```ts filename="tailwind.config.ts" {5, 9-10}
-  tailwind.config = {
-    theme: {
-      extend: {
-        animation: {
-          'scroll': 'scroll linear infinite',
+```ts filename="tailwind.config.ts" {5, 9-10}
+tailwind.config = {
+  theme: {
+    extend: {
+      animation: {
+        scroll: "scroll linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
         },
-        keyframes: {
-          'scroll': {
-            from: { transform: 'translateX(0)' },
-            to: { transform: 'translateX(-100%)' },
-          }
-        }
       },
     },
-  }
+  },
+};
 ```
 
 ### Create `InfiniteCarousel.tsx` Component
 
-  <ComponentSource name="infinite-carousel" /> 
+{" "}
+<ComponentSource name="infinite-carousel" />{" "}
 
 </Steps>
 
 </Tabs.Tab>
 </Tabs>
 
-
 ## InfiniteCarousel Props
 
-| Prop        | Type                     | Required | Description                                                        |
-|-------------|--------------------------|----------|--------------------------------------------------------------------|
-| `images`    | `string[]`              | Yes      | An array of image sources to be displayed in the carousel.        |
-| `direction` | `"left"` \| `"right"`   | No       | The direction of the carousel animation. Defaults to `"left"`.    |
-| `speed`     | `number`                 | No       | The speed of the carousel animation in seconds. Defaults to `25`.  |
-| `itemWidth` | `number`                 | Yes      | The width of each carousel item in pixels.                        |
-| `itemHeight`| `number`                 | Yes      | The height of each carousel item in pixels.                       |
+| Prop         | Type                  | Required | Description                                                       |
+| ------------ | --------------------- | -------- | ----------------------------------------------------------------- |
+| `images`     | `string[]`            | Yes      | An array of image sources to be displayed in the carousel.        |
+| `direction`  | `"left"` \| `"right"` | No       | The direction of the carousel animation. Defaults to `"left"`.    |
+| `speed`      | `number`              | No       | The speed of the carousel animation in seconds. Defaults to `25`. |
+| `itemWidth`  | `number`              | Yes      | The width of each carousel item in pixels.                        |
+| `itemHeight` | `number`              | Yes      | The height of each carousel item in pixels.                       |
 
 ## InfiniteCarouselItem Props
 
-| Prop    | Type      | Required | Description                                           |
-|---------|-----------|----------|-------------------------------------------------------|
-| `src`   | `string`  | Yes      | The source of the image to be displayed.             |
-| `width` | `number`  | Yes      | The width of the image in pixels.                    |
-| `height`| `number`  | Yes      | The height of the image in pixels.                   |
-
+| Prop     | Type     | Required | Description                              |
+| -------- | -------- | -------- | ---------------------------------------- |
+| `src`    | `string` | Yes      | The source of the image to be displayed. |
+| `width`  | `number` | Yes      | The width of the image in pixels.        |
+| `height` | `number` | Yes      | The height of the image in pixels.       |

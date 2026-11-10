@@ -11,7 +11,7 @@ import { HttpsProxyAgent } from "https-proxy-agent";
 import fetch from "node-fetch";
 import { z } from "zod";
 
-const baseUrl = process.env.COMPONENTS_REGISTRY_URL ?? "https://webui.gopx.dev";
+const baseUrl = process.env.COMPONENTS_REGISTRY_URL ?? "https://eclairui.gopalverma.com";
 const shadcnBaseUrl = "https://ui.shadcn.com";
 
 type theTree = z.infer<typeof registryIndexSchema>;

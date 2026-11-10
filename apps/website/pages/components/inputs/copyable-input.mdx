@@ -1,20 +1,22 @@
 ---
 title: "Copyable Input"
 description: "Reusable React component that renders an input field with a copy button to copy the input value to the clipboard."
-image: "https://webui.gopx.dev/assets/components/inputs/copyable-input.png"
+image: "https://eclairui.gopalverma.com/assets/components/inputs/copyable-input.png"
 ---
 
-import Showcase from '@/components/Showcase2';
-import { Steps } from 'nextra/components'
+import Showcase from "@/components/Showcase2";
+import { Steps } from "nextra/components";
 import { Tabs } from "nextra/components";
-import CopyableInput from '@/components/CopyableInput';
+import CopyableInput from "@/components/CopyableInput";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
-
 # Copyable Input
 
-<p className="component-description">Reusable React component that renders an input field with a copy button to copy the input value to the clipboard.</p>
+<p className="component-description">
+  Reusable React component that renders an input field with a copy button to
+  copy the input value to the clipboard.
+</p>
 
 `Copy` `Input`
 
@@ -29,6 +31,7 @@ import { ComponentSource } from "@/components/component-source";
 ```bash
 npx gopx-webui add copyable-input
 ```
+
   </Tabs.Tab>
   <Tabs.Tab>
 <Steps>
@@ -40,13 +43,12 @@ npx gopx-webui add copyable-input
   </Tabs.Tab>
 </Tabs>
 
-
 ## Props
 
-| Prop | Type                     | Required | Description                                                                                     |
-|-------------|--------------------------|----------|-------------------------------------------------------------------------------------------------|
-| `value`     | `string`                 | Yes      | The value of the input field. This is a required prop.                                        |
-| `onChange`  | `(value: string) => void`| No       | An optional callback function that is called when the input value changes.                     |
-| `className` | `string`                 | No       | An optional additional CSS class to apply to the container div for custom styling.             |
-| `editable`  | `boolean`                | No       | Determines if the input field is editable. If `false`, the input will be read-only.           |
-| `spellcheck`| `boolean`                | No       | Specifies whether the input should have spell checking enabled. Default is `false`.           |
+| Prop         | Type                      | Required | Description                                                                         |
+| ------------ | ------------------------- | -------- | ----------------------------------------------------------------------------------- |
+| `value`      | `string`                  | Yes      | The value of the input field. This is a required prop.                              |
+| `onChange`   | `(value: string) => void` | No       | An optional callback function that is called when the input value changes.          |
+| `className`  | `string`                  | No       | An optional additional CSS class to apply to the container div for custom styling.  |
+| `editable`   | `boolean`                 | No       | Determines if the input field is editable. If `false`, the input will be read-only. |
+| `spellcheck` | `boolean`                 | No       | Specifies whether the input should have spell checking enabled. Default is `false`. |

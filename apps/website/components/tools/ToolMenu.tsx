@@ -26,7 +26,7 @@ export function ToolsIndex() {
                 page.frontMatter?.description || "No description available"
               }
               imageUrl={
-                page.frontMatter?.image || "https://webui.gopx.dev/og.jpeg"
+                page.frontMatter?.image || "https://eclairui.gopalverma.com/og.jpeg"
               }
             />
           );

@@ -18,7 +18,7 @@ export default async function handler(req) {
     searchParams.get("description")?.slice(0, 200) ||
     "Beautiful UI Components for web at your fingertips!";
   const image =
-    searchParams.get("image") || "https://eclairui.gopx.dev/og.jpeg";
+    searchParams.get("image") || "https://eclairui.gopalverma.com/og.jpeg";
 
   return new ImageResponse(
     (
@@ -53,7 +53,7 @@ export default async function handler(req) {
             }}
             height="30"
             width="30"
-            src="https://eclairui.gopx.dev/eui-r.png"
+            src="https://eclairui.gopalverma.com/eui-r.png"
             alt="Eclair UI Logo"
           />
           Eclair UI

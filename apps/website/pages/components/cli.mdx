@@ -1,7 +1,7 @@
 ---
 title: CLI
 description: A CLI for adding GOPX WEBUI components to your project.
-image: "https://webui.gopx.dev/assets/docs/cli.png"
+image: "https://eclairui.gopalverma.com/assets/docs/cli.png"
 ---
 
 # CLI
@@ -28,7 +28,7 @@ Commands:
 
 ## init
 
-Use the `init` command to initialize configuration and dependencies for a new project.   
+Use the `init` command to initialize configuration and dependencies for a new project.
 
 The `init` command installs dependencies, adds the `cn` util, configures `tailwind.config.js`, and CSS variables for the project.
 
@@ -65,7 +65,7 @@ Just add these line(s) to your `components.json` file:
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils",
-    "ui": "@/components/ui",
+    "ui": "@/components/ui"
   }
 }
 ```
@@ -115,7 +115,7 @@ npx gopx-webui add --example
 You will be presented with a list of components to choose from:
 
 ```bash
-? Which components would you like to add? › Space to select. A to toggle all. Enter to submit. 
+? Which components would you like to add? › Space to select. A to toggle all. Enter to submit.
 ◯   avatar-stack-demo
 ◯   copyable-input-demo
 ◯   ghost-label-demo
@@ -136,7 +136,7 @@ npx gopx-webui add --block
 You will be presented with a list of components to choose from:
 
 ```bash
-? Which components would you like to add? › Space to select. A to toggle all. Enter to submit. 
+? Which components would you like to add? › Space to select. A to toggle all. Enter to submit.
 ◯   gopx-faqs
 ◯   gopx-hero
 ◯   gopx-pricing
@@ -151,7 +151,7 @@ npx gopx-webui add
 You will be presented with a list of components to choose from:
 
 ```bash
-? Which components would you like to add? › Space to select. A to toggle all. Enter to submit. 
+? Which components would you like to add? › Space to select. A to toggle all. Enter to submit.
 ◯   accordion
 ◯   avatar-stack
 ◯   bento-grid
@@ -167,9 +167,9 @@ You will be presented with a list of components to choose from:
 ### Options
 
 ```bash
-Usage: gopx-webui add [options] [components...]                                                                                   
+Usage: gopx-webui add [options] [components...]
 
-Add ui components to your project                                                                                                 
+Add ui components to your project
 
 Arguments:
   components         the components to add
@@ -195,6 +195,7 @@ Run the following command to get a list of components that have updates availabl
 ```bash
 npx gopx-webui diff
 ```
+
 ```bash
 The following components have updates available:
 - alert
@@ -207,6 +208,7 @@ The following components have updates available:
 ```
 
 Then run `diff [component]` to see the changes:
+
 ```bash
 const alertVariants = cva(
 - "relative w-full rounded-lg border",
@@ -214,7 +216,7 @@ const alertVariants = cva(
 )
 ```
 
-### Options 
+### Options
 
 ```bash
 Usage: gopx-webui diff [options] [component]
@@ -229,4 +231,3 @@ Options:
   -c, --cwd <cwd>  the working directory. defaults to the current directory.
   -h, --help       display help for command
 ```
-

@@ -71,7 +71,7 @@ const TemplateItem: React.FC<{ item: Template }> = ({ item }) => {
         ${index === 0 ? "" : index === 1 ? "hidden md:block" : "hidden lg:block"}`}
           >
             <Image
-              src={src || "https://gopx.dev/og.jpeg"}
+              src={src || "https://gopalverma.com/og.jpeg"}
               alt={`template preview ${index + 1}`}
               width={216}
               height={216}

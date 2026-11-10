@@ -1,26 +1,26 @@
 ---
 title: "Profile Card"
 description: "A reusable UI element that displays key user information, typically including a profile picture, name, and brief bio or contact details."
-image: "https://webui.gopx.dev/assets/components/cards/profile-card.png"
+image: "https://eclairui.gopalverma.com/assets/components/cards/profile-card.png"
 ---
 
-import Showcase from '@/components/Showcase3';
-import { ProfileCard }  from '@gopx-webui/ui/cards';
-import { Steps } from 'nextra/components'
+import Showcase from "@/components/Showcase3";
+import { ProfileCard } from "@gopx-webui/ui/cards";
+import { Steps } from "nextra/components";
 import { Tabs } from "nextra/components";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
-
 # Profile Card
 
-<p className="opacity-80 text-lg">A reusable UI element that displays key user information, typically including a profile picture, name, and brief bio or contact details.</p>
+<p className="opacity-80 text-lg">
+  A reusable UI element that displays key user information, typically including
+  a profile picture, name, and brief bio or contact details.
+</p>
 
 `Card` `Profile`
 
-<ComponentPreview name="profile-card-demo"
-/> 
-
+<ComponentPreview name="profile-card-demo" />{" "}
 
 ## Installation
 
@@ -31,33 +31,34 @@ import { ComponentSource } from "@/components/component-source";
 ```bash
 npx gopx-webui add profile-card
 ```
+
   </Tabs.Tab>
   <Tabs.Tab>
 <Steps>
 ### Install `react-icons`
 
-  ```bash
-  npm install react-icons
-  ```
- 
-### Create `ProfileCard.tsx` 
+```bash
+npm install react-icons
+```
 
-  <ComponentSource name="profile-card" />
+### Create `ProfileCard.tsx`
+
+{" "}
+<ComponentSource name="profile-card" />
 
 </Steps>
   </Tabs.Tab>
 </Tabs>
 
-
 ## Props
 
-| Prop     | Type    | Required | Description                                          |
-|----------|---------|----------|------------------------------------------------------|
-| `name`   | `string`| Yes      | The name of the individual displayed in the card.   |
-| `role`   | `string`| Yes      | The job title or role of the individual.            |
-| `company`| `string`| Yes      | The name of the company where the individual works.  |
-| `image`  | `string`| Yes      | URL to the individual's profile image (not used in the current implementation). |
-| `email`  | `string`| Yes      | The email address of the individual.                 |
-| `phone`  | `string`| Yes      | The phone number of the individual.                  |
-| `website`| `string`| Yes      | The personal or company website of the individual.   |
-| `github` | `string`| Yes      | The GitHub profile URL of the individual.            |
+| Prop      | Type     | Required | Description                                                                     |
+| --------- | -------- | -------- | ------------------------------------------------------------------------------- |
+| `name`    | `string` | Yes      | The name of the individual displayed in the card.                               |
+| `role`    | `string` | Yes      | The job title or role of the individual.                                        |
+| `company` | `string` | Yes      | The name of the company where the individual works.                             |
+| `image`   | `string` | Yes      | URL to the individual's profile image (not used in the current implementation). |
+| `email`   | `string` | Yes      | The email address of the individual.                                            |
+| `phone`   | `string` | Yes      | The phone number of the individual.                                             |
+| `website` | `string` | Yes      | The personal or company website of the individual.                              |
+| `github`  | `string` | Yes      | The GitHub profile URL of the individual.                                       |

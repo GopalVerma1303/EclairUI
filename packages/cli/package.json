@@ -59,7 +59,7 @@
   "bugs": {
     "url": "https://github.com/GopalVerma1303/webui.gopx/issues"
   },
-  "homepage": "https://webui.gopx.dev/components/cli",
+  "homepage": "https://eclairui.gopalverma.com/components/cli",
   "devDependencies": {
     "@gopx-webui/typescript-config": "workspace:*",
     "@types/babel__core": "^7.20.1",

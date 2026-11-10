@@ -47,7 +47,7 @@ const config: DocsThemeConfig = {
     const { title, frontMatter } = useConfig();
     const { route } = useRouter();
     const siteName = "Eclair UI";
-    const siteUrl = "https://eclairui.gopx.dev";
+    const siteUrl = "https://eclairui.gopalverma.com";
 
     // Function to generate title with conditional site name
     const getFullTitle = (pageTitle: string | undefined) => {
@@ -124,7 +124,7 @@ const config: DocsThemeConfig = {
         {/* Canonical URL */}
         <link rel="canonical" href={`${siteUrl}${route}`} />
 
-        <meta name="apple-mobile-web-app-title" content="gopx.dev" />
+        <meta name="apple-mobile-web-app-title" content="gopalverma.com" />
         <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" type="image/png" />
         <link

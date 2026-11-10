@@ -7,10 +7,10 @@ const FolderHoverButtonDemo = () => {
       <FolderHoverButton
         folderName="🗽 New York, USA"
         images={[
-          "https://old.gopx.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fllama-on-disk.6f858965.png&w=3840&q=75",
-          "https://old.gopx.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Foctocat-programming.ba4330be.png&w=3840&q=75",
-          "https://old.gopx.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwin-crash-meme.5c68b41d.png&w=2048&q=75",
-          "https://old.gopx.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fllama-on-disk.6f858965.png&w=3840&q=75",
+          "https://old.gopalverma.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fllama-on-disk.6f858965.png&w=3840&q=75",
+          "https://old.gopalverma.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Foctocat-programming.ba4330be.png&w=3840&q=75",
+          "https://old.gopalverma.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwin-crash-meme.5c68b41d.png&w=2048&q=75",
+          "https://old.gopalverma.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fllama-on-disk.6f858965.png&w=3840&q=75",
         ]}
       />
     </div>

@@ -1,12 +1,12 @@
 ---
 title: "Gopx Accordion"
-description: "Beautifully designed Accordion component for webui.gopx.dev with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly."
-image: "https://webui.gopx.dev/assets/components/accordions/gopx-accordion.png"
+description: "Beautifully designed Accordion component for eclairui.gopalverma.com with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly."
+image: "https://eclairui.gopalverma.com/assets/components/accordions/gopx-accordion.png"
 ---
 
-import Showcase from '@/components/Showcase2';
-import { ProfileCard }  from '@gopx-webui/ui/cards';
-import { Steps } from 'nextra/components'
+import Showcase from "@/components/Showcase2";
+import { ProfileCard } from "@gopx-webui/ui/cards";
+import { Steps } from "nextra/components";
 import { Tabs } from "nextra/components";
 import GopxAccordionDemo from "@/components/demos/gopx-accordion";
 import { Pre } from "@/components/pre";
@@ -14,10 +14,13 @@ import { Code } from "@/components/code";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
-
 # Gopx Accordion
 
-<p className="opacity-80 text-lg">Beautifully designed Accordion component for [GopxWebUI](https://webui.gopx.dev) with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly.</p>
+<p className="opacity-80 text-lg">
+  Beautifully designed Accordion component for
+  [GopxWebUI](https://eclairui.gopalverma.com) with Tailwind CSS and Framer
+  Motion. Copy, paste, and customize to enhance your web projects effortlessly.
+</p>
 
 `Tailwind CSS` `Framer Motion`
 
@@ -32,16 +35,17 @@ import { ComponentSource } from "@/components/component-source";
 ```bash
 npx gopx-webui add accordion
 ```
+
   </Tabs.Tab>
   <Tabs.Tab>
 <Steps>
   ### Install `framer-motion`
 
-  ```bash
-  npm install framer-motion
-  ```
+```bash
+npm install framer-motion
+```
 
-  ### Create `accordion.tsx` component
+### Create `accordion.tsx` component
 
   <ComponentSource name="accordion" />
 </Steps>
@@ -49,12 +53,11 @@ npx gopx-webui add accordion
   </Tabs.Tab>
 </Tabs>
 
-
 ## Props
 
-| Prop          | Type     | Required | Description                                         |
-|---------------|----------|----------|-----------------------------------------------------|
-| `title`      | `string` | Yes      | The title of the accordion item, displayed as a header. |
-| `description` | `string` | Yes      | The content that will be shown or hidden when the accordion is toggled. |
-| `isActive`    | `boolean`| Yes      | A flag indicating whether the accordion is currently expanded or collapsed. |
-| `toggleActive`| `function`| Yes     | A function that toggles the active state of the accordion when called. |
+| Prop           | Type       | Required | Description                                                                 |
+| -------------- | ---------- | -------- | --------------------------------------------------------------------------- |
+| `title`        | `string`   | Yes      | The title of the accordion item, displayed as a header.                     |
+| `description`  | `string`   | Yes      | The content that will be shown or hidden when the accordion is toggled.     |
+| `isActive`     | `boolean`  | Yes      | A flag indicating whether the accordion is currently expanded or collapsed. |
+| `toggleActive` | `function` | Yes      | A function that toggles the active state of the accordion when called.      |

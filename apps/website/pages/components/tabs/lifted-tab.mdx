@@ -1,17 +1,20 @@
 ---
 title: "Lifted Tab"
 description: "Elegant and interactive tab components crafted with Tailwind CSS and Framer Motion. Easily integrate and customize to elevate your web applications."
-image: "https://webui.gopx.dev/assets/components/tabs/lifted-tab.png"
+image: "https://eclairui.gopalverma.com/assets/components/tabs/lifted-tab.png"
 ---
 
-import { Steps } from 'nextra/components'
+import { Steps } from "nextra/components";
 import { Tabs } from "nextra/components";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
 # Lifted Tab
 
-<p className="component-description">Elegant and interactive tab components crafted with Tailwind CSS and Framer Motion. Easily integrate and customize to elevate your web applications.</p>
+<p className="component-description">
+  Elegant and interactive tab components crafted with Tailwind CSS and Framer
+  Motion. Easily integrate and customize to elevate your web applications.
+</p>
 
 `Tabs` `Animated` `framer-motion`
 
@@ -26,16 +29,17 @@ import { ComponentSource } from "@/components/component-source";
 ```bash
 npx gopx-webui add lifted-tab
 ```
+
   </Tabs.Tab>
   <Tabs.Tab>
 <Steps>
   ### Install `framer-motion`
 
-  ```bash
-  npm install framer-motion
-  ```
+```bash
+npm install framer-motion
+```
 
-  ### Create `lifted-tab.tsx` component
+### Create `lifted-tab.tsx` component
 
   <ComponentSource name="lifted-tab" />
 </Steps>
@@ -45,9 +49,8 @@ npx gopx-webui add lifted-tab
 
 # Props
 
-| Prop          | Type                                    | Required | Description                                                        |
-|---------------|-----------------------------------------|----------|--------------------------------------------------------------------|
-| `tabs`        | `Array<{ id: string; label: string; }>` | Yes      | An array of tab objects, each containing an `id` and `label`.     |
-| `activeTab`   | `string`                                | Yes      | The `id` of the currently active tab.                              |
-| `setActiveTab`| `(tabId: string) => void`              | Yes      | A function to update the active tab by setting its `id`.          |
-
+| Prop           | Type                                    | Required | Description                                                   |
+| -------------- | --------------------------------------- | -------- | ------------------------------------------------------------- |
+| `tabs`         | `Array<{ id: string; label: string; }>` | Yes      | An array of tab objects, each containing an `id` and `label`. |
+| `activeTab`    | `string`                                | Yes      | The `id` of the currently active tab.                         |
+| `setActiveTab` | `(tabId: string) => void`               | Yes      | A function to update the active tab by setting its `id`.      |

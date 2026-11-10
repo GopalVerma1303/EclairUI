@@ -1,19 +1,22 @@
 ---
 title: "Text Tooltip"
 description: "Text Tooltip component displays a tooltip with a message on hover, providing additional context and information about the hovered item."
-image: "https://webui.gopx.dev/assets/components/tooltips/text-tooltip.png"
+image: "https://eclairui.gopalverma.com/assets/components/tooltips/text-tooltip.png"
 ---
 
 import Showcase from "@/components/Showcase";
 import { Tabs } from "nextra/components";
-import { Steps } from 'nextra/components'
+import { Steps } from "nextra/components";
 import BlogList from "@/components/demos/text-tooltip";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
 # Text Tooltip
 
-<p className="component-description">Text Tooltip component displays a tooltip with a message on hover, providing additional context and information about the hovered item.</p>
+<p className="component-description">
+  Text Tooltip component displays a tooltip with a message on hover, providing
+  additional context and information about the hovered item.
+</p>
 
 `Tooltip` `Text` `Description` `Reveal` `Animation`
 
@@ -28,6 +31,7 @@ import { ComponentSource } from "@/components/component-source";
 ```bash
 npx gopx-webui add text-tooltip
 ```
+
   </Tabs.Tab>
   <Tabs.Tab>
 <Steps>
@@ -39,11 +43,10 @@ npx gopx-webui add text-tooltip
   </Tabs.Tab>
 </Tabs>
 
-
 ## Props
 
-| Prop          | Type                  | Required | Description                                                                                     |
-|---------------|-----------------------|----------|-------------------------------------------------------------------------------------------------|
-| `text`        | `string`              | Yes      | The main text that will be displayed when the tooltip is not hovered.                          |
-| `hoverMessage`| `string`              | No       | An optional message that will be displayed in the tooltip when the user hovers over the component. |
-| `children`    | `React.ReactNode`     | No       | Optional children elements that can be rendered inside the tooltip area, allowing for more complex content. |
+| Prop           | Type              | Required | Description                                                                                                 |
+| -------------- | ----------------- | -------- | ----------------------------------------------------------------------------------------------------------- |
+| `text`         | `string`          | Yes      | The main text that will be displayed when the tooltip is not hovered.                                       |
+| `hoverMessage` | `string`          | No       | An optional message that will be displayed in the tooltip when the user hovers over the component.          |
+| `children`     | `React.ReactNode` | No       | Optional children elements that can be rendered inside the tooltip area, allowing for more complex content. |

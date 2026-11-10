@@ -119,7 +119,7 @@ interface Card {
 }
 
 const BentoGrid: React.FC = () => {
-  const baseUrl = "https://webui.gopx.dev/assets/hero/bento";
+  const baseUrl = "https://eclairui.gopalverma.com/assets/hero/bento";
 
   const cards: Card[] = [
     {

@@ -73,7 +73,7 @@ const ProductCard: React.FC<{ item: Pack }> = ({ item }) => {
         <div className="relative w-full pt-[52.36%]">
           <Image
             className="rounded-t object-cover"
-            src={item.images[0] || "https://gopx.dev/og.jpeg"}
+            src={item.images[0] || "https://gopalverma.com/og.jpeg"}
             alt={`${item.name} preview`}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -142,7 +142,7 @@ const StoreItem: React.FC<{ item: Store }> = ({ item }) => {
         ${index === 0 ? "" : index === 1 ? "hidden md:block" : "hidden lg:block"}`}
           >
             <Image
-              src={src || "https://gopx.dev/og.jpeg"}
+              src={src || "https://gopalverma.com/og.jpeg"}
               alt={`Store preview ${index + 1}`}
               width={216}
               height={216}

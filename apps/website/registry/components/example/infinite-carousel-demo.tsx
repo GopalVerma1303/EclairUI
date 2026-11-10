@@ -6,11 +6,11 @@ const InfiniteCarouselDemo: React.FC = () => {
     <div className="flex flex-col gap-y-8 w-full">
       <InfiniteCarousel
         images={[
-          "https://webui.gopx.dev/assets/brands/nextjs.svg",
-          "https://webui.gopx.dev/assets/brands/tailwind.svg",
-          "https://webui.gopx.dev/assets/brands/framer-motion.svg",
-          "https://webui.gopx.dev/assets/brands/react.svg",
-          "https://webui.gopx.dev/assets/brands/gsap.png",
+          "https://eclairui.gopalverma.com/assets/brands/nextjs.svg",
+          "https://eclairui.gopalverma.com/assets/brands/tailwind.svg",
+          "https://eclairui.gopalverma.com/assets/brands/framer-motion.svg",
+          "https://eclairui.gopalverma.com/assets/brands/react.svg",
+          "https://eclairui.gopalverma.com/assets/brands/gsap.png",
         ]}
         direction="right"
         speed={25}
@@ -19,11 +19,11 @@ const InfiniteCarouselDemo: React.FC = () => {
       />
       <InfiniteCarousel
         images={[
-          "https://webui.gopx.dev/assets/brands/nextjs.svg",
-          "https://webui.gopx.dev/assets/brands/tailwind.svg",
-          "https://webui.gopx.dev/assets/brands/framer-motion.svg",
-          "https://webui.gopx.dev/assets/brands/react.svg",
-          "https://webui.gopx.dev/assets/brands/gsap.png",
+          "https://eclairui.gopalverma.com/assets/brands/nextjs.svg",
+          "https://eclairui.gopalverma.com/assets/brands/tailwind.svg",
+          "https://eclairui.gopalverma.com/assets/brands/framer-motion.svg",
+          "https://eclairui.gopalverma.com/assets/brands/react.svg",
+          "https://eclairui.gopalverma.com/assets/brands/gsap.png",
         ]}
         direction="left"
         speed={25}

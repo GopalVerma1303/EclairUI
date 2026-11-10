@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://eclairui.gopx.dev/eui-r.png" alt="EclairUI Logo" height="100">
+  <img src="https://eclairui.gopalverma.com/eui-r.png" alt="EclairUI Logo" height="100">
 
 ### Eclair UI
 
@@ -22,7 +22,7 @@ Beautiful UI Components for Web at Your Fingertips
 
 EclairUI is a comprehensive UI component library built with Next.js, React, and TailwindCSS. The project is structured as a Turborepo monorepo, providing a collection of beautiful, customizable components along with development tools and templates.
 
-  <img src="https://eclairui.gopx.dev/og.jpeg" alt="EclairUI OG Image">
+  <img src="https://eclairui.gopalverma.com/og.jpeg" alt="EclairUI OG Image">
 
 ## Repository Structure
 

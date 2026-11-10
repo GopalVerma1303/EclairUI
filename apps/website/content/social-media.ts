@@ -7,7 +7,7 @@ export type SocialProfile = {
 
 export const FOLLOW_US_LINKS: Record<string, SocialProfile> = {
   github: {
-    username: "gopx.dev",
+    username: "gopalverma.com",
     link: "https://github.com/GopalVerma1303/EclairUI",
   },
   discord: {
@@ -31,7 +31,7 @@ export const FOLLOW_US_LINKS: Record<string, SocialProfile> = {
 export const SOCIAL_MEDIA_LINKS: Record<string, SocialProfile> = {
   website: {
     username: "Eclair UI",
-    link: "https://eclairui.gopx.dev",
+    link: "https://eclairui.gopalverma.com",
   },
   github: {
     username: "Eclair UI",

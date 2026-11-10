@@ -188,7 +188,7 @@ components/
 ## Getting Help
 
 - Join our [Discord community](#)
-- Check out the [documentation](https://eclairui.gopx.dev)
+- Check out the [documentation](https://eclairui.gopalverma.com)
 - Ask in GitHub Discussions
 - Reach out to maintainers
 

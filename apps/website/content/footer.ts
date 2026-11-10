@@ -15,7 +15,7 @@ export const FOOTER_CONTENT = {
   },
   company: {
     name: "GopxDotDev",
-    url: "https://gopx.dev",
+    url: "https://gopalverma.com",
   },
   creator: {
     name: "@bettercallgopal",
@@ -69,7 +69,7 @@ export const FOOTER_CONTENT = {
   copyright: {
     year: 2025,
     companyName: "GopxDotDev™",
-    companyUrl: "https://gopx.dev",
+    companyUrl: "https://gopalverma.com",
   },
   socialLinks: Object.entries(FOLLOW_US_LINKS).map(([key, value]) => ({
     name: key,

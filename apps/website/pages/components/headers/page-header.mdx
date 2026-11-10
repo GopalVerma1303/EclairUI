@@ -1,40 +1,43 @@
 ---
 title: "Page Header"
-description: "Beautifully designed Page Header component for webui.gopx.dev with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly."
-image: "https://webui.gopx.dev/assets/components/headers/page-header.png"
+description: "Beautifully designed Page Header component for eclairui.gopalverma.com with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly."
+image: "https://eclairui.gopalverma.com/assets/components/headers/page-header.png"
 ---
 
-import Showcase from '@/components/Showcase3';
+import Showcase from "@/components/Showcase3";
 import { Tabs } from "nextra/components";
 import PageHeader from "@/components/ui/page-header";
 
 # Page Header
 
-<p className="opacity-80 text-lg">Beautifully designed Page Header component for [GOPX WEBUI](https://webui.gopx.dev) with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly.</p>
+<p className="opacity-80 text-lg">
+  Beautifully designed Page Header component for [GOPX
+  WEBUI](https://eclairui.gopalverma.com) with Tailwind CSS and Framer Motion.
+  Copy, paste, and customize to enhance your web projects effortlessly.
+</p>
 
 `GOPX` `Page` `Header`
 
-<Tabs items={['Preview', 'Code']}>
+<Tabs items={["Preview", "Code"]}>
   <Tabs.Tab>
     <Showcase>
-<PageHeader 
-  title="Page Header"
-  heading="Discover the Benefits of Our Header Component"
-  description="Our PageHeader component offers a sleek design and advanced features to enhance your user interface. Customize it easily to fit your project’s needs."
-/>
+      <PageHeader
+        title="Page Header"
+        heading="Discover the Benefits of Our Header Component"
+        description="Our PageHeader component offers a sleek design and advanced features to enhance your user interface. Customize it easily to fit your project’s needs."
+      />
     </Showcase>
   </Tabs.Tab>
   <Tabs.Tab>
-```tsx filename="PricingHeader.tsx" showLineNumbers
-<PageHeader 
-  title="Page Header"
-  heading="Discover the Benefits of Our Header Component"
-  description="Our PageHeader component offers a sleek design and advanced features to enhance your user interface. Customize it easily to fit your project’s needs."
-/>
-```
+    ```tsx filename="PricingHeader.tsx" showLineNumbers
+    <PageHeader
+      title="Page Header"
+      heading="Discover the Benefits of Our Header Component"
+      description="Our PageHeader component offers a sleek design and advanced features to enhance your user interface. Customize it easily to fit your project’s needs."
+    />
+    ```
   </Tabs.Tab>
 </Tabs>
-
 
 ## Installation
 
@@ -86,8 +89,8 @@ export default PageHeader;
 
 ## Props
 
-| Prop        | Type     | Required | Description                          |
-|-------------|----------|----------|--------------------------------------|
-| `title`     | `string` | Yes      | The main title displayed in the header. |
-| `heading`   | `string` | Yes      | A secondary heading that provides additional context. |
+| Prop          | Type     | Required | Description                                                     |
+| ------------- | -------- | -------- | --------------------------------------------------------------- |
+| `title`       | `string` | Yes      | The main title displayed in the header.                         |
+| `heading`     | `string` | Yes      | A secondary heading that provides additional context.           |
 | `description` | `string` | Yes      | A brief description or subtitle that elaborates on the heading. |

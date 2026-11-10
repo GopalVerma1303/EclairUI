@@ -10,7 +10,7 @@ const ProfileCardDemo: React.FC = () => {
       image="/me.jpg"
       email="business.gopalverma@gmail.com"
       phone="+1 (555) 123-4567"
-      website="www.gopx.dev"
+      website="www.gopalverma.com"
       github="GopalVerma1303"
     />
   );

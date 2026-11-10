@@ -15,19 +15,20 @@ const withNextra = nextra({
 const nextConfig = {
   images: {
     domains: [
-      "old.gopx.dev",
-      "eclairui.gopx.dev",
+      "old.gopalverma.com",
+      "eclairui.gopalverma.com",
       "bettercallgopal.vercel.app",
       "webui-gopx.vercel.app",
-      "gopx.dev",
-      "webui.gopx.dev",
-      "www.gopx.dev",
+      "gopalverma.com",
+      "eclairui.gopalverma.com",
+      "www.gopalverma.com",
       "www.codedeployingsquad.tech",
       "media.licdn.com",
       "github.com",
       "opengraph.githubassets.com",
       "picsum.photos",
       "images.unsplash.com",
+      "eclairui.gopalverma.com"
     ],
   },
   reactStrictMode: true,

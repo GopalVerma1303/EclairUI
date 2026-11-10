@@ -1,30 +1,33 @@
 ---
 title: "Gopx Dropdown"
-description: "Beautifully designed dropdown menu components for webui.gopx.dev with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly."
-image: "https://webui.gopx.dev/assets/components/menus/gopx-dropdown.png"
+description: "Beautifully designed dropdown menu components for eclairui.gopalverma.com with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly."
+image: "https://eclairui.gopalverma.com/assets/components/menus/gopx-dropdown.png"
 ---
 
-import Showcase from '@/components/Showcase';
-import { Steps } from 'nextra/components'
+import Showcase from "@/components/Showcase";
+import { Steps } from "nextra/components";
 import { Tabs } from "nextra/components";
-import TabButton from "@/components/gopx-buttons/TabButton"; 
-import toast, { Toaster } from 'react-hot-toast';
+import TabButton from "@/components/gopx-buttons/TabButton";
+import toast, { Toaster } from "react-hot-toast";
 import GopxDropdownSelector from "@/components/demos/gopx-dropdown";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
-
 export const handleClick = () => {
-  toast('Option Pressed!');
+  toast("Option Pressed!");
 };
 
 # Gopx Dropdown
 
-<p className="opacity-80 text-lg">Beautifully designed dropdown menu components for [GOPX WEBUI](https://webui.gopx.dev) with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly.</p>
+<p className="opacity-80 text-lg">
+  Beautifully designed dropdown menu components for [GOPX
+  WEBUI](https://eclairui.gopalverma.com) with Tailwind CSS and Framer Motion.
+  Copy, paste, and customize to enhance your web projects effortlessly.
+</p>
 
 `Dropdown` `Menus` `GOPX` `Animated` `framer-motion`
 
-<Tabs items={['Preview', 'Code']}>
+<Tabs items={["Preview", "Code"]}>
   <Tabs.Tab>
     <Showcase>
       <div className="w-full max-w-[400px] h-full -mt-56">
@@ -34,7 +37,7 @@ export const handleClick = () => {
     </Showcase>
   </Tabs.Tab>
   <Tabs.Tab>
-<ComponentSource name="gopx-dropdown-demo" />
+    <ComponentSource name="gopx-dropdown-demo" />
   </Tabs.Tab>
 </Tabs>
 
@@ -47,6 +50,7 @@ export const handleClick = () => {
 ```bash
 npx gopx-webui add dropdown
 ```
+
   </Tabs.Tab>
   <Tabs.Tab>
   ### Create `dropdown.tsx` component
@@ -55,41 +59,38 @@ npx gopx-webui add dropdown
   </Tabs.Tab>
 </Tabs>
 
-
-
 ## Props
 
 ### DropdownButton
 
-| Prop         | Type                | Required | Description                                         |
-|--------------|---------------------|----------|-----------------------------------------------------|
-| `value`      | `string \| number`   | Yes      | The current value displayed in the dropdown button. If no value is set, the placeholder will be shown. |
-| `placeholder`| `string`            | Yes      | The placeholder text displayed when there is no value. |
-| `onClick`    | `function`          | Yes      | A function that is called when the button is clicked. |
-| `isOpen`     | `boolean`           | Yes      | A flag indicating whether the dropdown is currently open or closed. |
+| Prop          | Type               | Required | Description                                                                                            |
+| ------------- | ------------------ | -------- | ------------------------------------------------------------------------------------------------------ |
+| `value`       | `string \| number` | Yes      | The current value displayed in the dropdown button. If no value is set, the placeholder will be shown. |
+| `placeholder` | `string`           | Yes      | The placeholder text displayed when there is no value.                                                 |
+| `onClick`     | `function`         | Yes      | A function that is called when the button is clicked.                                                  |
+| `isOpen`      | `boolean`          | Yes      | A flag indicating whether the dropdown is currently open or closed.                                    |
 
 ### DropdownItem
 
-| Prop         | Type                | Required | Description                                         |
-|--------------|---------------------|----------|-----------------------------------------------------|
-| `option`     | `T`                 | Yes      | The option object that represents the dropdown item. |
-| `onClick`    | `function`          | Yes      | A function that is called when the dropdown item is clicked. |
-| `children`   | `React.ReactNode`   | Yes      | The content to be displayed inside the dropdown item. |
+| Prop       | Type              | Required | Description                                                  |
+| ---------- | ----------------- | -------- | ------------------------------------------------------------ |
+| `option`   | `T`               | Yes      | The option object that represents the dropdown item.         |
+| `onClick`  | `function`        | Yes      | A function that is called when the dropdown item is clicked. |
+| `children` | `React.ReactNode` | Yes      | The content to be displayed inside the dropdown item.        |
 
 ### DropdownMenu
 
-| Prop      | Type                | Required | Description                                         |
-|-----------|---------------------|----------|-----------------------------------------------------|
-| `children`| `React.ReactNode`   | Yes      | The content to be displayed inside the dropdown menu. This can include any valid React nodes, such as `DropdownItem` components or other elements. |
+| Prop       | Type              | Required | Description                                                                                                                                        |
+| ---------- | ----------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `children` | `React.ReactNode` | Yes      | The content to be displayed inside the dropdown menu. This can include any valid React nodes, such as `DropdownItem` components or other elements. |
 
 ### Dropdown
 
-| Prop            | Type                        | Required | Description                                                                                                 |
-|-----------------|-----------------------------|----------|-------------------------------------------------------------------------------------------------------------|
-| `value`         | `T`                         | Yes      | The currently selected value of the dropdown. This should match one of the options in the `options` array. |
-| `onChange`      | `(value: T) => void`       | Yes      | A function that is called when an option is selected. It receives the selected value as an argument.        |
-| `options`       | `T[]`                       | Yes      | An array of options available for selection in the dropdown.                                               |
-| `renderOption`  | `(option: T) => React.ReactNode` | No       | An optional function that allows for custom rendering of each dropdown option. If not provided, the option will be displayed as is. |
-| `placeholder`   | `string`                   | No       | An optional placeholder text displayed when no option is selected. Defaults to "Select an option".          |
-| `className`     | `string`                   | No       | An optional additional CSS class for styling the dropdown component.                                        |
-
+| Prop           | Type                             | Required | Description                                                                                                                         |
+| -------------- | -------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `value`        | `T`                              | Yes      | The currently selected value of the dropdown. This should match one of the options in the `options` array.                          |
+| `onChange`     | `(value: T) => void`             | Yes      | A function that is called when an option is selected. It receives the selected value as an argument.                                |
+| `options`      | `T[]`                            | Yes      | An array of options available for selection in the dropdown.                                                                        |
+| `renderOption` | `(option: T) => React.ReactNode` | No       | An optional function that allows for custom rendering of each dropdown option. If not provided, the option will be displayed as is. |
+| `placeholder`  | `string`                         | No       | An optional placeholder text displayed when no option is selected. Defaults to "Select an option".                                  |
+| `className`    | `string`                         | No       | An optional additional CSS class for styling the dropdown component.                                                                |

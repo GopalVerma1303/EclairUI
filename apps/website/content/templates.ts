@@ -12,8 +12,8 @@ export const TEMPLATES = [
     sp: 0,
     cp: 39,
     discount: 50,
-    downloadLink: "https://github.com/GopalVerma1303/old.gopx.dev",
-    livePreviewLink: "https://old.gopx.dev",
+    downloadLink: "https://github.com/GopalVerma1303/old.gopalverma.com",
+    livePreviewLink: "https://old.gopalverma.com",
     docsLink: "/templates/template-devsite",
     description:
       "Developer's portfolio website for sharing notes, code snippets, resources, blogs, writeups, and showcase projects.",

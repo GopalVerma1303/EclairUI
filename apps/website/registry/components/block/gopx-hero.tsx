@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 import CopyableInput from "@/components/ui/copyable-input";
 
 const GopxUserStack: React.FC = () => {
-  const baseUrl = "https://webui.gopx.dev";
+  const baseUrl = "https://eclairui.gopalverma.com";
 
   const avatars = [
     {

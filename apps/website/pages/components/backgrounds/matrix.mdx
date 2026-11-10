@@ -1,19 +1,21 @@
 ---
 title: "Background Matrix"
 description: "A customizable React component that creates a matrix background using SVG, with adjustable color, size, and fade effects."
-image: "https://webui.gopx.dev/assets/components/backgrounds/matrix.png"
+image: "https://eclairui.gopalverma.com/assets/components/backgrounds/matrix.png"
 ---
 
 # Background Matrix
 
-<p className="component-description">A customizable React component that creates a matrix background using SVG, with adjustable color, size, and fade effects.</p>
+<p className="component-description">
+  A customizable React component that creates a matrix background using SVG,
+  with adjustable color, size, and fade effects.
+</p>
 
 `Aesthetics` `Effects` `Backgrounds` `Matrix`
 
-import Showcase from '@/components/Showcase3';
+import Showcase from "@/components/Showcase3";
 import BackgroundMatrix from "@/components/backgrounds/matrix";
 import { Tabs } from "nextra/components";
-
 
 <Tabs items={['Preview', 'Code']}>
   <Tabs.Tab>
@@ -26,23 +28,23 @@ import { Tabs } from "nextra/components";
 import React, { useEffect, useRef } from "react";
 
 interface MatrixBackgroundProps {
-  color?: string;
-  fontSize?: number;
-  className?: string;
-  speed?: number;
+color?: string;
+fontSize?: number;
+className?: string;
+speed?: number;
 }
 
 const MatrixBackground: React.FC<MatrixBackgroundProps> = ({
-  color = "#0F0",
-  fontSize = 14,
-  className = "",
-  speed = 1,
+color = "#0F0",
+fontSize = 14,
+className = "",
+speed = 1,
 }) => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+useEffect(() => {
+const canvas = canvasRef.current;
+if (!canvas) return;
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
@@ -95,26 +97,25 @@ const MatrixBackground: React.FC<MatrixBackgroundProps> = ({
       window.removeEventListener("resize", resizeCanvas);
       cancelAnimationFrame(animationFrameId);
     };
-  }, [color, fontSize, speed]);
 
-  return (
-    <canvas
-      ref={canvasRef}
-      className={`pointer-events-none ${className}`}
-      style={{
+}, [color, fontSize, speed]);
+
+return (
+<canvas
+ref={canvasRef}
+className={`pointer-events-none ${className}`}
+style={{
         position: "absolute",
         top: 0,
         left: 0,
         width: "100%",
         height: "100%",
       }}
-    />
-  );
+/>
+);
 };
 
 export default MatrixBackground;
 ```
   </Tabs.Tab>
 </Tabs>
-
-

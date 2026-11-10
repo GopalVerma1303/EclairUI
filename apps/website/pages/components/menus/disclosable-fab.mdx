@@ -1,19 +1,23 @@
 ---
 title: "Disclosable FAB"
 description: "Beautifully designed FAB component with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly."
-image: "https://webui.gopx.dev/assets/components/menus/disclosable-fab.png"
+image: "https://eclairui.gopalverma.com/assets/components/menus/disclosable-fab.png"
 ---
 
-import { Steps } from 'nextra/components'
+import { Steps } from "nextra/components";
 import { Tabs } from "nextra/components";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
 # Disclosable FAB
 
-<p className="opacity-80 text-lg">Beautifully designed floating action button component with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly.</p>
+<p className="opacity-80 text-lg">
+  Beautifully designed floating action button component with Tailwind CSS and
+  Framer Motion. Copy, paste, and customize to enhance your web projects
+  effortlessly.
+</p>
 
-`FAB` `Button` `Tailwind CSS` `Framer Motion` 
+`FAB` `Button` `Tailwind CSS` `Framer Motion`
 
 <ComponentPreview name="disclosable-fab-demo" />
 
@@ -26,6 +30,7 @@ import { ComponentSource } from "@/components/component-source";
 ```bash
 npx gopx-webui add disclosable-fab
 ```
+
   </Tabs.Tab>
   <Tabs.Tab>
 <Steps>
@@ -36,9 +41,10 @@ npx gopx-webui add disclosable-fab
 npm i framer-motion
 ```
 
-### Create `disclosable-fab.tsx` 
+### Create `disclosable-fab.tsx`
 
-  <ComponentSource name="disclosable-fab" />
+{" "}
+<ComponentSource name="disclosable-fab" />
 
 </Steps>
   </Tabs.Tab>
@@ -46,19 +52,19 @@ npm i framer-motion
 
 ## Props
 
-| Prop                   | Type                | Required | Description                                                                                     |
-|------------------------|---------------------|----------|-------------------------------------------------------------------------------------------------|
-| `menuItems`            | `MenuItemProps[]`   | Yes      | Array of menu items to be displayed when FAB is opened                                         |
-| `width`               | `number`            | No       | Width of the expanded FAB menu in pixels. Defaults to 320                                      |
-| `height`              | `number`            | No       | Height of the expanded FAB menu in pixels. Defaults to 280                                     |
-| `backgroundColor`     | `string`            | No       | Background color class for light mode. Defaults to "bg-white"                                  |
-| `darkBackgroundColor` | `string`            | No       | Background color class for dark mode. Defaults to "dark:bg-[#1f1f1f]"                         |
+| Prop                  | Type              | Required | Description                                                           |
+| --------------------- | ----------------- | -------- | --------------------------------------------------------------------- |
+| `menuItems`           | `MenuItemProps[]` | Yes      | Array of menu items to be displayed when FAB is opened                |
+| `width`               | `number`          | No       | Width of the expanded FAB menu in pixels. Defaults to 320             |
+| `height`              | `number`          | No       | Height of the expanded FAB menu in pixels. Defaults to 280            |
+| `backgroundColor`     | `string`          | No       | Background color class for light mode. Defaults to "bg-white"         |
+| `darkBackgroundColor` | `string`          | No       | Background color class for dark mode. Defaults to "dark:bg-[#1f1f1f]" |
 
 ## MenuItemProps
 
-| Prop          | Type         | Required | Description                                                                                     |
-|---------------|--------------|----------|-------------------------------------------------------------------------------------------------|
-| `title`       | `string`     | Yes      | Title text for the menu item                                                                    |
-| `description` | `string`     | Yes      | Description text for the menu item                                                              |
-| `icon`        | `LucideIcon` | Yes      | Lucide icon component to be displayed for the menu item                                         |
-| `onClick`     | `() => void` | No       | Optional click handler for the menu item                                                        |
+| Prop          | Type         | Required | Description                                             |
+| ------------- | ------------ | -------- | ------------------------------------------------------- |
+| `title`       | `string`     | Yes      | Title text for the menu item                            |
+| `description` | `string`     | Yes      | Description text for the menu item                      |
+| `icon`        | `LucideIcon` | Yes      | Lucide icon component to be displayed for the menu item |
+| `onClick`     | `() => void` | No       | Optional click handler for the menu item                |

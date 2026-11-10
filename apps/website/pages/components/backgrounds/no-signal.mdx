@@ -1,19 +1,21 @@
 ---
 title: "Background No-Signal"
 description: "A customizable React component that creates a no-signal background using SVG, with adjustable color, size, and fade effects."
-image: "https://webui.gopx.dev/assets/components/backgrounds/no-signal.png"
+image: "https://eclairui.gopalverma.com/assets/components/backgrounds/no-signal.png"
 ---
 
 # Background No-Signal
 
-<p className="component-description">A customizable React component that creates a no-signal background using SVG, with adjustable color, size, and fade effects.</p>
+<p className="component-description">
+  A customizable React component that creates a no-signal background using SVG,
+  with adjustable color, size, and fade effects.
+</p>
 
 `Aesthetics` `Effects` `Backgrounds` `NoSignal`
 
-import Showcase from '@/components/Showcase3';
+import Showcase from "@/components/Showcase3";
 import BackgroundNoSignal from "@/components/backgrounds/no-signal";
 import { Tabs } from "nextra/components";
-
 
 <Tabs items={['Preview', 'Code']}>
   <Tabs.Tab>
@@ -26,19 +28,19 @@ import { Tabs } from "nextra/components";
 import React, { useEffect, useRef } from "react";
 
 interface NoSignalScreenProps {
-  className?: string;
-  frameRate?: number;
+className?: string;
+frameRate?: number;
 }
 
 const NoSignalScreen: React.FC<NoSignalScreenProps> = ({
-  className = "",
-  frameRate = 30,
+className = "",
+frameRate = 30,
 }) => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+useEffect(() => {
+const canvas = canvasRef.current;
+if (!canvas) return;
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
@@ -81,26 +83,25 @@ const NoSignalScreen: React.FC<NoSignalScreenProps> = ({
       window.removeEventListener("resize", resizeCanvas);
       cancelAnimationFrame(animationFrameId);
     };
-  }, [frameRate]);
 
-  return (
-    <canvas
-      ref={canvasRef}
-      className={`pointer-events-none opacity-50 absolute inset-0 ${className}`}
-      style={{
+}, [frameRate]);
+
+return (
+<canvas
+ref={canvasRef}
+className={`pointer-events-none opacity-50 absolute inset-0 ${className}`}
+style={{
         position: "absolute",
         top: 0,
         left: 0,
         width: "100%",
         height: "100%",
       }}
-    />
-  );
+/>
+);
 };
 
 export default NoSignalScreen;
 ```
   </Tabs.Tab>
 </Tabs>
-
-

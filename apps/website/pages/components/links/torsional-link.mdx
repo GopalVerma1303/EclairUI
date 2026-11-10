@@ -1,20 +1,22 @@
 ---
 title: "Torsional Link"
 description: "Animated link component with torsional movement on hover, adding dynamic visual flair to your UI."
-image: "https://webui.gopx.dev/assets/components/links/torsional-link.png"
+image: "https://eclairui.gopalverma.com/assets/components/links/torsional-link.png"
 ---
 
 import { TorsionalLink } from "@gopx-webui/ui/links";
 import Showcase from "@/components/Showcase";
 import { Tabs } from "nextra/components";
-import { Steps } from 'nextra/components'
+import { Steps } from "nextra/components";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
-
 # Torsional Link
 
-<p className="opacity-80 text-lg">Animated link component with torsional movement on hover, adding dynamic visual flair to your UI.</p>
+<p className="opacity-80 text-lg">
+  Animated link component with torsional movement on hover, adding dynamic
+  visual flair to your UI.
+</p>
 
 `Link` `Reveal` `Animation`
 
@@ -29,6 +31,7 @@ import { ComponentSource } from "@/components/component-source";
 ```bash
 npx gopx-webui add torsional-link
 ```
+
   </Tabs.Tab>
   <Tabs.Tab>
 <Steps>
@@ -40,21 +43,19 @@ npx gopx-webui add torsional-link
   </Tabs.Tab>
 </Tabs>
 
-
-
 ## Props
 
-| Prop              | Type                          | Required | Description                                                                                   |
-|-------------------|-------------------------------|----------|-----------------------------------------------------------------------------------------------|
-| `href`            | `string`                      | Yes      | The URL that the link points to.                                                             |
-| `children`        | `string`                      | Yes      | The text content to be displayed within the link.                                            |
-| `duration`        | `number`                      | No       | The duration of the hover animation in seconds (default is `0.25`).                         |
-| `stagger`         | `number`                      | No       | The delay between the animations of each letter in seconds (default is `0.025`).            |
-| `fontSize`       | `string`                      | No       | The size of the font (default is `"4xl"`).                                                  |
-| `fontWeight`      | `string \| number`             | No       | The weight of the font (default is `"extrabold"`).                                              |
-| `textTransform`   | `"uppercase" \| "lowercase" \| "capitalize" \| "none"` | No       | The text transformation style (default is `"uppercase"`).                                   |
-| `initialColor`    | `string`                      | No       | The initial color of the text before hover (default is `"black"`).                          |
-| `hoverColor`      | `string`                      | No       | The color of the text when hovered (default is `"black"`).                                  |
-| `lineHeight`      | `number \| string`             | No       | The line height of the text (default is `0.9`).                                             |
-| `easing`          | `string`                      | No       | The easing function for the animation (default is `"easeInOut"`).                           |
-| `className`       | `string`                      | No       | Additional custom CSS classes to apply to the link element.                                  |
+| Prop            | Type                                                   | Required | Description                                                                      |
+| --------------- | ------------------------------------------------------ | -------- | -------------------------------------------------------------------------------- |
+| `href`          | `string`                                               | Yes      | The URL that the link points to.                                                 |
+| `children`      | `string`                                               | Yes      | The text content to be displayed within the link.                                |
+| `duration`      | `number`                                               | No       | The duration of the hover animation in seconds (default is `0.25`).              |
+| `stagger`       | `number`                                               | No       | The delay between the animations of each letter in seconds (default is `0.025`). |
+| `fontSize`      | `string`                                               | No       | The size of the font (default is `"4xl"`).                                       |
+| `fontWeight`    | `string \| number`                                     | No       | The weight of the font (default is `"extrabold"`).                               |
+| `textTransform` | `"uppercase" \| "lowercase" \| "capitalize" \| "none"` | No       | The text transformation style (default is `"uppercase"`).                        |
+| `initialColor`  | `string`                                               | No       | The initial color of the text before hover (default is `"black"`).               |
+| `hoverColor`    | `string`                                               | No       | The color of the text when hovered (default is `"black"`).                       |
+| `lineHeight`    | `number \| string`                                     | No       | The line height of the text (default is `0.9`).                                  |
+| `easing`        | `string`                                               | No       | The easing function for the animation (default is `"easeInOut"`).                |
+| `className`     | `string`                                               | No       | Additional custom CSS classes to apply to the link element.                      |

@@ -7,7 +7,7 @@ const ImageTooltipDemo: React.FC = () => {
       Outside of programming, being a mountain guy from{" "}
       <ImageTooltip
         hoverImage={{
-          src: "https://old.gopx.dev/personal/me/utkd.jpg",
+          src: "https://old.gopalverma.com/personal/me/utkd.jpg",
           alt: "my og",
           width: 200,
           height: 100,
@@ -18,7 +18,7 @@ const ImageTooltipDemo: React.FC = () => {
       <ImageTooltip
         text="Chandigarh"
         hoverImage={{
-          src: "https://old.gopx.dev/personal/me/chd.jpg",
+          src: "https://old.gopalverma.com/personal/me/chd.jpg",
           alt: "my og",
           width: 200,
           height: 100,

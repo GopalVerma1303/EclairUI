@@ -1,21 +1,23 @@
 ---
 title: "Ghost Label"
 description: "Enhance your web projects with our meticulously crafted text components powered by Tailwind CSS and Framer Motion. Seamlessly integrate responsive, visually appealing typography into your designs with just a few lines of code."
-image: "https://webui.gopx.dev/assets/components/text/ghost-label.png"
+image: "https://eclairui.gopalverma.com/assets/components/text/ghost-label.png"
 ---
 
-import Showcase from '@/components/Showcase2';
-import { ProfileCard }  from '@gopx-webui/ui/cards';
-import { Steps } from 'nextra/components'
+import Showcase from "@/components/Showcase2";
+import { ProfileCard } from "@gopx-webui/ui/cards";
+import { Steps } from "nextra/components";
 import { Tabs } from "nextra/components";
-import GhostLabel from '@/components/GhostLabel';
+import GhostLabel from "@/components/GhostLabel";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
-
 # Ghost Label
 
-<p className="opacity-80 text-lg">A reusable UI element that displays key user information, typically including a profile picture, name, and brief bio or contact details.</p>
+<p className="opacity-80 text-lg">
+  A reusable UI element that displays key user information, typically including
+  a profile picture, name, and brief bio or contact details.
+</p>
 
 `Card` `Profile`
 
@@ -30,10 +32,11 @@ import { ComponentSource } from "@/components/component-source";
 ```bash
 npx gopx-webui add ghost-label
 ```
+
   </Tabs.Tab>
   <Tabs.Tab>
 <Steps>
-### Create `GhostLabel.tsx` 
+### Create `GhostLabel.tsx`
 
 <ComponentSource name="ghost-label" />
 
@@ -42,11 +45,8 @@ npx gopx-webui add ghost-label
   </Tabs.Tab>
 </Tabs>
 
-
-
-
 ## Props
 
-| Prop     | Type    | Required | Description                                          |
-|----------|---------|----------|------------------------------------------------------|
-| `text`   | `string`| Yes      | The text that you want to display as the ghost label.|
+| Prop   | Type     | Required | Description                                           |
+| ------ | -------- | -------- | ----------------------------------------------------- |
+| `text` | `string` | Yes      | The text that you want to display as the ghost label. |

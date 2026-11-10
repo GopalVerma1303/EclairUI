@@ -1,19 +1,21 @@
 ---
 title: "Background Check"
 description: "A customizable React component that creates a check background using SVG, with adjustable color, size, and fade effects."
-image: "https://webui.gopx.dev/assets/components/backgrounds/check.png"
+image: "https://eclairui.gopalverma.com/assets/components/backgrounds/check.png"
 ---
 
 # Background Check
 
-<p className="component-description">A customizable React component that creates a check background using SVG, with adjustable color, size, and fade effects.</p>
+<p className="component-description">
+  A customizable React component that creates a check background using SVG, with
+  adjustable color, size, and fade effects.
+</p>
 
 `Aesthetics` `Effects` `Backgrounds` `Check`
 
-import Showcase from '@/components/Showcase3';
+import Showcase from "@/components/Showcase3";
 import BackgroundCheck from "@/components/backgrounds/check";
 import { Tabs } from "nextra/components";
-
 
 <Tabs items={['Preview', 'Code']}>
   <Tabs.Tab>
@@ -26,32 +28,31 @@ import { Tabs } from "nextra/components";
 import { HTMLProps } from "react";
 
 interface CheckeredBackgroundProps {
-  color: string;
-  cellSize: string | number;
-  strokeWidth: number | string;
-  className?: string;
-  fade?: boolean;
+color: string;
+cellSize: string | number;
+strokeWidth: number | string;
+className?: string;
+fade?: boolean;
 }
 
 const CheckeredBackground = ({
-  color = "#5271ff",
-  cellSize = "25px",
-  strokeWidth = "3px",
-  className,
-  fade = true,
-  ...props
+color = "#5271ff",
+cellSize = "25px",
+strokeWidth = "3px",
+className,
+fade = true,
+...props
 }: Partial<CheckeredBackgroundProps> & HTMLProps<HTMLDivElement>) => {
-  const svg = `
-    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200' stroke='${color}' stroke-width='${strokeWidth}' fill-opacity='0.4' >
+const svg = `     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200' stroke='${color}' stroke-width='${strokeWidth}' fill-opacity='0.4' >
       <path d='M 0 0 L 200 200'/>
       <path d='M 200 0 L 0 200'/>
     </svg>
   `;
-  const svgDataUrl = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
-  return (
-    <div
-      className={`pointer-events-none ${className}`}
-      style={{
+const svgDataUrl = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+return (
+<div
+className={`pointer-events-none ${className}`}
+style={{
         backgroundImage: `url("${svgDataUrl}")`,
         backgroundRepeat: "repeat",
         backgroundSize: cellSize,
@@ -62,15 +63,11 @@ const CheckeredBackground = ({
           ? `radial-gradient(ellipse at top, white, transparent 70%)`
           : undefined,
       }}
-      {...props}
-    ></div>
-  );
+{...props} ></div>
+);
 };
 
 export default CheckeredBackground;
 ```
   </Tabs.Tab>
 </Tabs>
-
-
-

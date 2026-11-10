@@ -1,21 +1,23 @@
 ---
 title: "Image Tooltip"
 description: "Image Tooltip component displays an image tooltip on hover, offering visual context and details about the hovered item."
-image: "https://webui.gopx.dev/assets/components/tooltips/image-tooltip.png"
+image: "https://eclairui.gopalverma.com/assets/components/tooltips/image-tooltip.png"
 ---
 
-import { Callout } from 'nextra/components'
+import { Callout } from "nextra/components";
 import { ImageTooltip } from "@gopx-webui/ui/tooltips";
 import Showcase from "@/components/Showcase";
 import { Tabs } from "nextra/components";
-import { Steps } from 'nextra/components'
+import { Steps } from "nextra/components";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
-
 # Image Tooltip
 
-<p className="component-description">Image Tooltip component displays an image tooltip on hover, offering visual context and details about the hovered item.</p>
+<p className="component-description">
+  Image Tooltip component displays an image tooltip on hover, offering visual
+  context and details about the hovered item.
+</p>
 
 `Tooltip` `Image` `Reveal` `Animation`
 
@@ -30,11 +32,12 @@ import { ComponentSource } from "@/components/component-source";
 ```bash
 npx gopx-webui add image-tooltip
 ```
+
   </Tabs.Tab>
   <Tabs.Tab>
 <Steps>
 
-  ### Create `image-tooltip.tsx` component
+### Create `image-tooltip.tsx` component
 
   <ComponentSource name="image-tooltip" />
 </Steps>
@@ -44,8 +47,8 @@ npx gopx-webui add image-tooltip
 
 ## Props
 
-| Prop        | Type                                             | Required | Description                                                                                     |
-|-------------|--------------------------------------------------|----------|-------------------------------------------------------------------------------------------------|
-| `text`     | `string`                                        | Yes      | The text that will be displayed within the tooltip.                                           |
-| `Icon`     | `React.FC<SVGProps<SVGSVGElement>>`            | No       | An optional SVG icon component to be displayed alongside the text.                             |
-| `hoverImage`| `{ src: string; alt: string; width: number; height: number; }` | No       | An optional object containing the source URL, alt text, width, and height of the image to be displayed on hover. |
+| Prop         | Type                                                           | Required | Description                                                                                                      |
+| ------------ | -------------------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------- |
+| `text`       | `string`                                                       | Yes      | The text that will be displayed within the tooltip.                                                              |
+| `Icon`       | `React.FC<SVGProps<SVGSVGElement>>`                            | No       | An optional SVG icon component to be displayed alongside the text.                                               |
+| `hoverImage` | `{ src: string; alt: string; width: number; height: number; }` | No       | An optional object containing the source URL, alt text, width, and height of the image to be displayed on hover. |

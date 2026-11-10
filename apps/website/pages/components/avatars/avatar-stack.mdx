@@ -1,28 +1,30 @@
 ---
 title: "Avatars Stack"
 description: "Beautifully designed Avatar components Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly."
-image: "https://webui.gopx.dev/assets/components/avatars/avatar-stack.png"
+image: "https://eclairui.gopalverma.com/assets/components/avatars/avatar-stack.png"
 ---
 
-import Showcase from '@/components/Showcase3';
-import { ProfileCard }  from '@gopx-webui/ui/cards';
-import { Steps } from 'nextra/components'
+import Showcase from "@/components/Showcase3";
+import { ProfileCard } from "@gopx-webui/ui/cards";
+import { Steps } from "nextra/components";
 import { Tabs } from "nextra/components";
-import TabButton from "@/components/gopx-buttons/TabButton"; 
-import toast, { Toaster } from 'react-hot-toast';
-import AvatarStack from '@/components/ui/avatar-stack';
-import GopxUserStack from '@/components/example/avatar-stack-demo';
+import TabButton from "@/components/gopx-buttons/TabButton";
+import toast, { Toaster } from "react-hot-toast";
+import AvatarStack from "@/components/ui/avatar-stack";
+import GopxUserStack from "@/components/example/avatar-stack-demo";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 
-
 export const handleClick = () => {
-  toast('Button Pressed!');
+  toast("Button Pressed!");
 };
 
 # Avatar Stack
 
-<p className="opacity-80 text-lg">Beautifully designed Avatar components with Tailwind CSS and Framer Motion. Copy, paste, and customize to enhance your web projects effortlessly.</p>
+<p className="opacity-80 text-lg">
+  Beautifully designed Avatar components with Tailwind CSS and Framer Motion.
+  Copy, paste, and customize to enhance your web projects effortlessly.
+</p>
 
 `Avatars` `Stack`
 
@@ -30,25 +32,22 @@ export const handleClick = () => {
 
 ## Installation
 
-<Tabs items={['CLI', 'Manual']}>
+<Tabs items={["CLI", "Manual"]}>
   <Tabs.Tab>
-    ### Run the following command:
-    ```bash
-    npx gopx-webui add avatar-stack
-    ```
+    ### Run the following command: ```bash npx gopx-webui add avatar-stack ```
   </Tabs.Tab>
   <Tabs.Tab>
     ### Create `avatar-stack.tsx`
-  <ComponentSource name="avatar-stack" />
+    <ComponentSource name="avatar-stack" />
   </Tabs.Tab>
 </Tabs>
 
 ## Props
 
-| Prop           | Type          | Description                                                                                     |
-|---------------------|-------------------|-----------------------------------------------------------------------------------------------------|
-| `avatars`           | `Avatar[]`        | An array of avatar objects, each containing `src` (string) and `alt` (string) properties.         |
-| `maxDisplay`        | `number` (optional) | The maximum number of avatars to display. Defaults to `5`.                                         |
-| `size`              | `number` (optional) | The size of the avatars in a specified unit (e.g., pixels). Defaults to `10`.                      |
-| `borderColor`       | `string` (optional) | The color of the avatar border. Defaults to `"white"`.                                            |
-| `darkBorderColor`   | `string` (optional) | The border color for dark mode. Defaults to `"gray-800"`.                                         |
+| Prop              | Type                | Description                                                                               |
+| ----------------- | ------------------- | ----------------------------------------------------------------------------------------- |
+| `avatars`         | `Avatar[]`          | An array of avatar objects, each containing `src` (string) and `alt` (string) properties. |
+| `maxDisplay`      | `number` (optional) | The maximum number of avatars to display. Defaults to `5`.                                |
+| `size`            | `number` (optional) | The size of the avatars in a specified unit (e.g., pixels). Defaults to `10`.             |
+| `borderColor`     | `string` (optional) | The color of the avatar border. Defaults to `"white"`.                                    |
+| `darkBorderColor` | `string` (optional) | The border color for dark mode. Defaults to `"gray-800"`.                                 |

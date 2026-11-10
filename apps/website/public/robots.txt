@@ -8,7 +8,7 @@ Disallow: /terms-and-conditions
 Disallow: /privacy-policy
 
 # Host
-Host: https://eclairui.gopx.dev
+Host: https://eclairui.gopalverma.com
 
 # Sitemaps
-Sitemap: https://eclairui.gopx.dev/sitemap.xml
+Sitemap: https://eclairui.gopalverma.com/sitemap.xml
